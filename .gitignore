@@ -1,0 +1,6 @@
+.DS_Store
+/node_modules
+/public
+.cache
+yarn-error.log
+src/react-app-env.d.ts

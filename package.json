@@ -1,0 +1,71 @@
+{
+  "name": "cgao.info",
+  "version": "1.0.0",
+  "description": "Chuntong Gao's personal site",
+  "main": "index.js",
+  "author": "Chuntong Gao",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "focus-visible": "^5.0.2",
+    "gatsby-plugin-mdx": "^1.0.56",
+    "js-cookie": "^2.2.1",
+    "prismjs": "^1.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-reveal": "^1.2.2",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "@types/js-cookie": "^2.2.4",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14",
+    "@types/styled-components": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-simple-import-sort": "^4.0.0",
+    "gatsby": "^2.17.11",
+    "gatsby-image": "^2.2.31",
+    "gatsby-plugin-catch-links": "^2.1.16",
+    "gatsby-plugin-google-analytics": "^2.1.25",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-styled-components": "^3.1.12",
+    "gatsby-plugin-typescript": "^2.1.16",
+    "gatsby-remark-copy-linked-files": "^2.1.29",
+    "gatsby-remark-images": "^3.1.30",
+    "gatsby-remark-prismjs": "^3.3.22",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-remark": "^2.6.33",
+    "gatsby-transformer-sharp": "^2.3.3",
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run check",
+      "pre-push": "yarn run check"
+    }
+  },
+  "scripts": {
+    "preinstall": "node -r fs -e \"fs.existsSync('.git/hooks') || fs.mkdirSync('.git/hooks')\"",
+    "start": "yarn dev",
+    "dev": "rm -rf .cache && gatsby develop",
+    "build": "rm -rf .cache && gatsby build",
+    "serve": "gatsby serve",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' && tsc --noEmit",
+    "lint:fix": "eslint  '*/**/*.{js,ts,tsx}' --fix && tsc --noEmit",
+    "pretty": "prettier --config ./.prettierrc.json --write '*/**/*.{js,ts,tsx}' && yarn run lint:fix",
+    "check": "prettier --config ./.prettierrc.json --check '*/**/*.{js,ts,tsx}' && yarn run lint"
+  }
+}
