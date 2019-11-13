@@ -8,7 +8,6 @@
  */
 import 'focus-visible';
 
-// eslint-disable-next-line
 import React, { useEffect, useState } from 'react';
 
 import { ThemeProvider } from './src/lib/styled-components';

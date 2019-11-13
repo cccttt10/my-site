@@ -29,8 +29,15 @@ module.exports = {
         'no-unused-vars': [
             'error',
             {
-                'varsIgnorePattern': 'React',
-                'argsIgnorePattern': '^(resource|props)$'
+                'varsIgnorePattern': '^(React|useEffect|useState)$',
+                'argsIgnorePattern': '^(resource|props|getNode)$'
+            }
+        ],
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                'varsIgnorePattern': '^(React|useEffect|useState)$',
+                'argsIgnorePattern': '^(resource|props|getNode)$'
             }
         ],
         '@typescript-eslint/explicit-function-return-type': 'off',
