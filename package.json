@@ -63,9 +63,9 @@
     "dev": "rm -rf .cache && gatsby develop",
     "build": "rm -rf .cache && gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' && tsc --noEmit",
-    "lint:fix": "eslint  '*/**/*.{js,ts,tsx}' --fix && tsc --noEmit",
-    "pretty": "prettier --config ./.prettierrc.json --write '*/**/*.{js,ts,tsx}' && yarn run lint:fix",
-    "check": "prettier --config ./.prettierrc.json --check '*/**/*.{js,ts,tsx}' && yarn run lint"
+    "lint": "eslint '**/*.{js,ts,tsx}' && tsc --noEmit",
+    "lint:fix": "eslint  '**/*.{js,ts,tsx}' --fix && tsc --noEmit",
+    "pretty": "prettier --config ./.prettierrc.json --write '**/*.{js,ts,tsx}' && yarn run lint:fix",
+    "check": "prettier --config ./.prettierrc.json --check '**/*.{js,ts,tsx}' && yarn run lint"
   }
 }

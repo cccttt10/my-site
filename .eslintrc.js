@@ -1,15 +1,10 @@
-// prettier-ignore
 module.exports = {
     'extends': [
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended'
     ],
-    'plugins': [
-        'simple-import-sort', 
-        'react',
-        '@typescript-eslint'
-    ],
+    'plugins': ['simple-import-sort', 'react', '@typescript-eslint'],
     'env': {
         'node': true,
         'es6': true,
@@ -17,7 +12,7 @@ module.exports = {
     },
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
-        'project': 'tsconfig.json',
+        // 'project': 'tsconfig.json',
         'ecmaVersion': 9,
         'ecmaFeatures': {
             'jsx': true
@@ -33,15 +28,19 @@ module.exports = {
         'camelcase': 'error',
         'no-unused-vars': [
             'error',
-            { 'varsIgnorePattern': 'React', 'argsIgnorePattern': '^(resource|props)$' },
+            {
+                'varsIgnorePattern': 'React',
+                'argsIgnorePattern': '^(resource|props)$'
+            }
         ],
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-use-before-define': 'warn',
+        '@typescript-eslint/no-explicit-any': 'off',
         'react/jsx-key': 'warn',
         'react/prop-types': 'off',
         'simple-import-sort/sort': 'error',
         'sort-imports': 'off',
-        'import/order': 'off',
+        'import/order': 'off'
     },
     'settings': {
         'react': {
@@ -55,9 +54,6 @@ module.exports = {
             { 'property': 'freeze', 'object': 'Object' },
             { 'property': 'myFavoriteWrapper' }
         ],
-        'linkComponents': [
-            'Hyperlink',
-            { 'name': 'Link', 'linkAttribute': 'to' }
-        ]
+        'linkComponents': ['Hyperlink', { 'name': 'Link', 'linkAttribute': 'to' }]
     }
 };
