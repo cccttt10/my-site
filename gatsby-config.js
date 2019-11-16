@@ -67,7 +67,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Front-end web developer`,
+                name: `Full-stack web developer`,
                 short_name: `Chuntong`,
                 start_url: `/`,
                 background_color: `#F9FCFF`,
