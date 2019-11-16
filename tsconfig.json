@@ -11,7 +11,7 @@
             "dom.iterable",
             "esnext"
         ],
-        "listFiles": true,
+        "listFiles": false,
         "module": "esnext",
         "moduleResolution": "node",
         "noEmit": true,
