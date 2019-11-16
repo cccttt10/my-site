@@ -22,8 +22,10 @@ module.exports = {
     },
     'plugins': ['simple-import-sort', 'react', '@typescript-eslint'],
     'rules': {
+        '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': 'warn',
-        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-use-before-define': 'warn',
         'camelcase': 'error',
         'eqeqeq': 'error',
@@ -31,8 +33,8 @@ module.exports = {
         'no-console': 'warn',
         'no-trailing-spaces': 'error',
         'no-unused-vars': ['error', {
-            'argsIgnorePattern': '^(props)$',
-            'varsIgnorePattern': '^(React)|(useEffect)|(useState)$'
+            'argsIgnorePattern': '^(props)|(getNode)$',
+            'varsIgnorePattern': '^(React)|(useEffect)|(useState)|(light)|(dark)|(Theme)$'
         }],
         'no-var': 'error',
         'react/boolean-prop-naming': 'error',
