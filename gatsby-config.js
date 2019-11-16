@@ -54,7 +54,8 @@ module.exports = {
                             noInlineHighlight: true,
                             aliases: {}
                         }
-                    }
+                    },
+                    `gatsby-remark-embedder`
                 ]
             }
         },
