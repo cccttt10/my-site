@@ -1,10 +1,10 @@
 {
-    "printWidth": 85,
     "arrowParens": "avoid",
-    "useTabs": false,
-    "tabWidth": 4,
-    "singleQuote": true,
-    "semi": true,
     "bracketSpacing": true,
-    "quoteProps": "preserve"
+    "printWidth": 85,
+    "quoteProps": "preserve",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false
 }

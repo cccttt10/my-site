@@ -8,17 +8,20 @@
  */
 import 'focus-visible';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useEffect, useState } from 'react';
 
 import { ThemeProvider } from './src/lib/styled-components';
 import { ContextThemeProvider, useTheme } from './src/utils/context';
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Wrapper = ({ children }) => {
     const { theme } = useTheme();
 
     return <ThemeProvider theme={{ color: theme }}>{children}</ThemeProvider>;
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export const wrapRootElement = ({ element }) => {
     return (
         <ContextThemeProvider>

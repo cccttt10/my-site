@@ -49,14 +49,9 @@
     "gatsby-transformer-remark": "^2.6.33",
     "gatsby-transformer-sharp": "^2.3.3",
     "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run check",
-      "pre-push": "yarn run check"
-    }
   },
   "scripts": {
     "preinstall": "node -r fs -e \"fs.existsSync('.git/hooks') || fs.mkdirSync('.git/hooks')\"",
@@ -64,9 +59,9 @@
     "dev": "rm -rf .cache && gatsby develop",
     "build": "rm -rf .cache && gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint '**/*.{js,ts,tsx}' && tsc --noEmit",
-    "lint:fix": "eslint  '**/*.{js,ts,tsx}' --fix && tsc --noEmit",
-    "pretty": "prettier --config ./.prettierrc.json --write '**/*.{js,ts,tsx}' && yarn run lint:fix",
-    "check": "prettier --config ./.prettierrc.json --check '**/*.{js,ts,tsx}' && yarn run lint"
+    "lint": "eslint './**/*.{js,ts,tsx}'",
+    "lint:fix": "eslint  './**/*.{js,ts,tsx}' --fix",
+    "pretty": "prettier --config ./.prettierrc.json --write './**/*.{js,ts,tsx}' && yarn run lint:fix",
+    "check": "prettier --config ./.prettierrc.json --check './**/*.{js,ts,tsx}' && yarn run lint && tsc"
   }
 }

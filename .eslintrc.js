@@ -1,66 +1,52 @@
+// prettier-ignore
 module.exports = {
-    'extends': [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended'
-    ],
-    'plugins': ['simple-import-sort', 'react', '@typescript-eslint'],
     'env': {
-        'node': true,
+        'browser': true,
         'es6': true,
-        'browser': true
+        'node': true
     },
+    'extends': ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended'],
+    'overrides': [{
+        'files': 'src/util/starterPalettes.ts',
+        'rules': {
+            'max-lines': 'off'
+        }
+    }],
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
-        // 'project': 'tsconfig.json',
-        'ecmaVersion': 9,
         'ecmaFeatures': {
             'jsx': true
         },
+        'ecmaVersion': 9,
         'sourceType': 'module'
     },
+    'plugins': ['simple-import-sort', 'react', '@typescript-eslint'],
     'rules': {
-        'no-var': 'error',
-        'require-await': 'error',
-        'no-trailing-spaces': 'error',
-        'eqeqeq': 'error',
-        'no-console': 'error',
-        'camelcase': 'error',
-        'no-unused-vars': [
-            'error',
-            {
-                'varsIgnorePattern': '^(React|useEffect|useState)$',
-                'argsIgnorePattern': '^(resource|props|getNode)$'
-            }
-        ],
-        '@typescript-eslint/no-unused-vars': [
-            'error',
-            {
-                'varsIgnorePattern': '^(React|useEffect|useState)$',
-                'argsIgnorePattern': '^(resource|props|getNode)$'
-            }
-        ],
-        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'warn',
+        '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/no-use-before-define': 'warn',
-        '@typescript-eslint/no-explicit-any': 'off',
+        'camelcase': 'error',
+        'eqeqeq': 'error',
+        'max-lines': ['warn', 200],
+        'no-console': 'warn',
+        'no-trailing-spaces': 'error',
+        'no-unused-vars': ['error', {
+            'argsIgnorePattern': '^(props)$',
+            'varsIgnorePattern': '^(React)|(useEffect)|(useState)$'
+        }],
+        'no-var': 'error',
+        'react/boolean-prop-naming': 'error',
         'react/jsx-key': 'warn',
+        'react/no-unused-prop-types': 'error',
+        'react/no-unused-state': 'error',
+        'react/prefer-stateless-function': 'warn',
         'react/prop-types': 'off',
-        'simple-import-sort/sort': 'error',
-        'sort-imports': 'off',
-        'import/order': 'off'
+        'require-await': 'error',
+        'simple-import-sort/sort': 'error'
     },
     'settings': {
         'react': {
-            'createClass': 'createReactClass',
-            'pragma': 'React',
-            'version': 'detect',
-            'flowVersion': '0.53'
-        },
-        'propWrapperFunctions': [
-            'forbidExtraProps',
-            { 'property': 'freeze', 'object': 'Object' },
-            { 'property': 'myFavoriteWrapper' }
-        ],
-        'linkComponents': ['Hyperlink', { 'name': 'Link', 'linkAttribute': 'to' }]
+            'version': 'detect'
+        }
     }
 };
