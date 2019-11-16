@@ -32,12 +32,14 @@ module.exports = {
         'max-lines': ['warn', 200],
         'no-console': 'warn',
         'no-trailing-spaces': 'error',
+        'no-unexpected-multiline': 'off',
         'no-unused-vars': ['error', {
             'argsIgnorePattern': '^(props)|(getNode)$',
             'varsIgnorePattern': '^(React)|(useEffect)|(useState)|(light)|(dark)|(Theme)$'
         }],
         'no-var': 'error',
         'react/boolean-prop-naming': 'error',
+        'react/display-name': 'off',
         'react/jsx-key': 'warn',
         'react/no-unused-prop-types': 'error',
         'react/no-unused-state': 'error',
