@@ -33,5 +33,7 @@ export default {
             <Quote {...props} />
         ),
     Sandbox: (props: { src: string; title: string }) => <Sandbox {...props} />,
-    Link: (props: { to: string; children: React.ReactNode }) => <Link {...props} />
+    Link: (props: { to: string; children: React.ReactNode }) => (
+        <Link underline={true} {...props} />
+    )
 };

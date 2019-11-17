@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { colors } from '../styles/common';
 
-const Link = styled.a<{ active: string; to?: string }>`
+const Link = styled.a<{ active: string; to?: string; underline?: boolean }>`
     color: ${props => {
         if (props.active === 'true') {
             if (props.theme.color === 'light') {
@@ -22,8 +22,14 @@ const Link = styled.a<{ active: string; to?: string }>`
     }};
 
     text-decoration: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+
+    ${props =>
+        props.underline &&
+        `
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    `}
+
     &:hover {
         color: ${props =>
             props.theme.color === 'light'
@@ -36,12 +42,14 @@ type LinkComponentProps = {
     children: React.ReactNode;
     to: string;
     active?: string;
+    underline?: boolean;
 };
 
 const LinkComponent = ({
     children,
     to,
     active = 'false',
+    underline,
     ...other
 }: LinkComponentProps) => {
     const internal = /^\/(?!\/)(?!static\/)/.test(to);
@@ -55,7 +63,14 @@ const LinkComponent = ({
     }
 
     return (
-        <Link href={to} active={active} target="_blank" rel="noopener" {...other}>
+        <Link
+            href={to}
+            active={active}
+            underline={underline}
+            target="_blank"
+            rel="noopener"
+            {...other}
+        >
             {children}
         </Link>
     );

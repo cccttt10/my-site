@@ -88,8 +88,6 @@ const NavListItem = styled.li`
 
 const NavLink = styled(Link)`
     ${textColor.title};
-    text-decoration: none;
-    border-bottom-width: 0;
 `;
 
 const ModifiedThemeSwitch: any = styled(ThemeSwitch)`

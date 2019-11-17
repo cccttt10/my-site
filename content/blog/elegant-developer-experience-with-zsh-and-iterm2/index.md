@@ -105,3 +105,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
 More installation options can be found <Link to="https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md">Here</Link>.
+
+#### colorls
