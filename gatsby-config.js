@@ -80,7 +80,7 @@ module.exports = {
         author: `Chuntong Gao`,
         description: `The web development blog and project portfolio of Chuntong Gao, a student web developer based in Vancouver 🇨🇦.`,
         imagePath: `/social-sharing.jpg`,
-        siteUrl: ``,
+        siteUrl: `https://www.robertcooper.me`,
         title: `Chuntong Gao`
     }
 };

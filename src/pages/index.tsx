@@ -293,9 +293,9 @@ export const Home = ({
                     </HeadshotWrapper>
                     <Intro>
                         <IntroDescription>
-                            `I am <strong>Chuntong Gao</strong>, a full-stack web
+                            I am <strong>Chuntong Gao</strong>, a full-stack web
                             developer that builds web apps and writes articles on web
-                            development ✌🏻`
+                            development ✌🏻
                         </IntroDescription>
                         <SocialMediaGroup />
                     </Intro>
