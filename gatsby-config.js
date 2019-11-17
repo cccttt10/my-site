@@ -2,61 +2,54 @@
 
 module.exports = {
     pathPrefix: `/`,
-    siteMetadata: {
-        siteUrl: ``,
-        author: `Chuntong Gao`,
-        title: `Chuntong Gao`,
-        description: `The web development blog and project portfolio of Chuntong Gao, a student web developer based in Vancouver 🇨🇦.`,
-        imagePath: `/social-sharing.jpg`
-    },
     plugins: [
         {
-            resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/content/blog`,
-                name: `blog`
-            }
+                name: `blog`,
+                path: `${__dirname}/content/blog`
+            },
+            resolve: `gatsby-source-filesystem`
         },
         {
-            resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/content/projects`,
-                name: `projects`
-            }
+                name: `projects`,
+                path: `${__dirname}/content/projects`
+            },
+            resolve: `gatsby-source-filesystem`
         },
         {
-            resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/assets/images`,
-                name: `images`
-            }
+                name: `images`,
+                path: `${__dirname}/assets/images`
+            },
+            resolve: `gatsby-source-filesystem`
         },
         {
-            resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: ['.mdx', '.md'],
                 gatsbyRemarkPlugins: [
                     {
-                        resolve: `gatsby-remark-images`,
                         options: {
-                            quality: 100,
-                            maxWidth: 800,
                             backgroundColor: `none`,
+                            maxWidth: 800,
+                            quality: 100,
                             withWebp: true
-                        }
+                        },
+                        resolve: `gatsby-remark-images`
                     },
                     `gatsby-remark-copy-linked-files`,
                     {
-                        resolve: `gatsby-remark-prismjs`,
                         options: {
+                            aliases: {},
                             classPrefix: `language-`,
-                            noInlineHighlight: true,
-                            aliases: {}
-                        }
+                            noInlineHighlight: true
+                        },
+                        resolve: `gatsby-remark-prismjs`
                     },
                     `gatsby-remark-embedder`
                 ]
-            }
+            },
+            resolve: `gatsby-plugin-mdx`
         },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
@@ -65,23 +58,29 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-typescript`,
         {
-            resolve: `gatsby-plugin-manifest`,
             options: {
+                background_color: `#F9FCFF`,
+                display: `standalone`,
+                icon: `assets/logo.png`,
                 name: `Full-stack web developer`,
                 short_name: `Chuntong`,
                 start_url: `/`,
-                background_color: `#F9FCFF`,
-                theme_color: `#09203A`,
-                display: `standalone`,
-                icon: `assets/logo.png`
-            }
-        },
-
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: `UA-80196253-8`
-            }
+                theme_color: `#09203A`
+            },
+            resolve: `gatsby-plugin-manifest`
         }
-    ]
+        // {
+        //     options: {
+        //         trackingId: `UA-80196253-8`
+        //     },
+        //     resolve: `gatsby-plugin-google-analytics`
+        // }
+    ],
+    siteMetadata: {
+        author: `Chuntong Gao`,
+        description: `The web development blog and project portfolio of Chuntong Gao, a student web developer based in Vancouver 🇨🇦.`,
+        imagePath: `/social-sharing.jpg`,
+        siteUrl: ``,
+        title: `Chuntong Gao`
+    }
 };
