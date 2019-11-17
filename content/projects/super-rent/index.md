@@ -1,12 +1,12 @@
 ---
-date: '2018-10-21'
-title: 'Meat Journal'
-subtitle: 'React Native / iOS'
-description: 'iOS application to track and analyze the amount of meat eaten.'
+date: '2019-10-20'
+title: 'Super Rent'
+subtitle: 'React.js + Node.js + MySQL'
+description: 'End-to-end admin system for a car rental company'
 image: './images/main.png'
-backgroundColor: '#F9CD5C'
+backgroundColor: '#0BB87E'
 textColor: 'dark'
-detailsPageLink: '/project/meat-journal'
+detailsPageLink: '/project/super-rent'
 banner: './images/meat-journal-social-sharing.png'
 ---
 

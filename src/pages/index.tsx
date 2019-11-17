@@ -295,8 +295,9 @@ export const Home = ({
                     <Intro>
                         <IntroDescription>
                             I am <strong>Chuntong Gao</strong> <br />a{' '}
-                            <strong>full-stack engineer</strong> <br />
-                            that builds <strong>web apps</strong>
+                            <strong>full-stack engineer</strong> that
+                            <br />
+                            builds <strong>modern web apps</strong>
                         </IntroDescription>
                         <SocialMediaGroup />
                     </Intro>

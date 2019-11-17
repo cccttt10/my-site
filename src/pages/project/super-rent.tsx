@@ -285,7 +285,7 @@ export default Project;
 
 export const pageQuery = graphql`
     query {
-        mdx(frontmatter: { title: { eq: "Meat Journal" } }) {
+        mdx(frontmatter: { title: { eq: "Super Rent" } }) {
             frontmatter {
                 title
                 subtitle
@@ -306,7 +306,7 @@ export const pageQuery = graphql`
         }
         image1: file(
             name: { eq: "image-1" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
@@ -316,7 +316,7 @@ export const pageQuery = graphql`
         }
         image2: file(
             name: { eq: "image-2" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
@@ -326,7 +326,7 @@ export const pageQuery = graphql`
         }
         image3: file(
             name: { eq: "image-3" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
@@ -336,7 +336,7 @@ export const pageQuery = graphql`
         }
         image4: file(
             name: { eq: "image-4" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 500) {
@@ -346,7 +346,7 @@ export const pageQuery = graphql`
         }
         image5: file(
             name: { eq: "image-5" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
@@ -356,7 +356,7 @@ export const pageQuery = graphql`
         }
         image6: file(
             name: { eq: "image-6" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 500) {
@@ -366,7 +366,7 @@ export const pageQuery = graphql`
         }
         image7: file(
             name: { eq: "image-7" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 500) {
@@ -376,7 +376,7 @@ export const pageQuery = graphql`
         }
         image8: file(
             name: { eq: "image-8" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 400) {
@@ -386,7 +386,7 @@ export const pageQuery = graphql`
         }
         image9: file(
             name: { eq: "image-9" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 400) {
@@ -396,7 +396,7 @@ export const pageQuery = graphql`
         }
         image10: file(
             name: { eq: "image-10" }
-            relativePath: { regex: "/meat-journal/images/" }
+            relativePath: { regex: "/super-rent/images/" }
         ) {
             childImageSharp {
                 fluid(maxWidth: 400) {
