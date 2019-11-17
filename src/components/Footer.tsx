@@ -63,7 +63,7 @@ const FooterComponent = ({}: FooterProps) => {
                         </SocialMediaLink>
                     </SocialMediaListItem>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="www.linkedin.com/in/chuntonggao">
+                        <SocialMediaLink to="https://www.linkedin.com/in/chuntonggao">
                             LinkedIn
                         </SocialMediaLink>
                     </SocialMediaListItem>
