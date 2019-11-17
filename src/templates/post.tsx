@@ -45,7 +45,11 @@ const ProgressBar = styled.div`
 const PostTitle = styled(Title)`
     text-align: left;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 100px;
+
+    ${media.medium`
+        margin-bottom: 60px;
+    `};
 
     ${media.small`
         text-align: center;
@@ -55,7 +59,9 @@ const PostTitle = styled(Title)`
 const Date = styled.time`
     display: block;
     margin-bottom: 40px;
-    font-style: italic;
+    font-weight: 100;
+    ${textSize.small}
+    text-align: right;
 
     ${media.small`
         text-align: center;
@@ -297,7 +303,6 @@ const Post = (props: PostProps) => {
                 <ProgressBar ref={progressBar} />
             </ProgressContainer>
             <StyledPaddedPageWrapper>
-                <PostTitle>{mdx.frontmatter.title}</PostTitle>
                 {postUpdatedSinceFirstPublic ? (
                     <Date dateTime={mdx.frontmatter.updatedAtDate}>
                         updated on {mdx.frontmatter.formattedUpdatedAtDate}
@@ -307,6 +312,7 @@ const Post = (props: PostProps) => {
                         published on {mdx.frontmatter.formattedPublicationDate}
                     </Date>
                 )}
+                <PostTitle>{mdx.frontmatter.title}</PostTitle>
 
                 <MDXContent>
                     <MDXRenderer>{mdx.body}</MDXRenderer>

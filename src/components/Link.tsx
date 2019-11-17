@@ -21,6 +21,9 @@ const Link = styled.a<{ active: string; to?: string }>`
         }
     }};
 
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     &:hover {
         color: ${props =>
             props.theme.color === 'light'

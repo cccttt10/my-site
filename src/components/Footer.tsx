@@ -47,6 +47,7 @@ const SocialMediaListItem = styled.li`
 const SocialMediaLink = styled(Link)`
     ${textColor.title}
     text-decoration: none;
+    border-bottom-width: 0;
 `;
 
 type FooterProps = {};
