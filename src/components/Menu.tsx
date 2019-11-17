@@ -129,7 +129,7 @@ const MenuComponent = () => {
                 {({ location }) => (
                     <ModifiedPageWrapper>
                         <MenuTitleComponent location={location}>
-                            <NavLink to="/">Robert Cooper</NavLink>
+                            <NavLink to="/">Chuntong Gao</NavLink>
                         </MenuTitleComponent>
                         <Nav>
                             <NavList>

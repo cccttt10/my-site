@@ -75,7 +75,7 @@ const HeaderImage = styled(Img)`
             props.theme.color === 'light'
                 ? colors.backgroundLight
                 : colors.backgroundDark};
-        opacity: 0.5;
+        opacity: 1;
     }
 `;
 
@@ -116,7 +116,7 @@ const Intro = styled.div`
 `;
 
 const IntroDescription = styled.p`
-    ${textSize.large};
+    ${textSize.largeThin};
     ${textColor.body};
     margin-bottom: 10px;
 

@@ -100,24 +100,33 @@ export const textSize = {
     normal: css`
         font-size: 1.8rem;
         line-height: 1.8;
-        font-weight: 400;
+        font-weight: 300;
 
         ${media.small`
             font-size: 1.6rem;
         `};
     `,
+    largeThin: css`
+        font-size: 3.6rem;
+        line-height: 1.5;
+        font-weight: 100;
+
+        ${media.small`
+        font-size: 2rem;
+    `};
+    `,
     large: css`
         line-height: 1.5;
-        font-size: 2.4rem;
-        font-weight: 400;
+        font-size: 3.6rem;
+        font-weight: 600;
 
         ${media.small`
             font-size: 2rem;
         `};
     `,
     xlarge: css`
-        font-size: 3.6rem;
-        font-weight: 400;
+        font-size: 6rem;
+        font-weight: 600;
         line-height: 1.4;
 
         ${media.small`
