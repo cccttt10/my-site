@@ -2,7 +2,7 @@ import { css } from '../lib/styled-components';
 
 export const primitiveColors = {
     aero: '#80B2ED',
-    deutziaWhite: '#F9FCFF',
+    deutziaWhite: '#FBFAF6',
     draculaOrchid: '#2C3137',
     oldGloryBlue: '#03256C',
     vapor: '#EAEAEA',
@@ -105,6 +105,15 @@ export const textSize = {
         ${media.small`
             font-size: 1.6rem;
         `};
+    `,
+    normalBold: css`
+        font-size: 1.8rem;
+        line-height: 1.8;
+        font-weight: 600;
+
+        ${media.small`
+        font-size: 1.6rem;
+    `};
     `,
     largeThin: css`
         font-size: 3.6rem;

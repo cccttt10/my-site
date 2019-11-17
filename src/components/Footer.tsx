@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '../styles/common';
+import { colors, textColor } from '../styles/common';
 import { PageWrapper } from './Common';
 import Link from './Link';
 
 export const footerHeight = 120;
 
+// background-color: ${props =>
+//     props.theme.color === 'light'
+//         ? colors.backgroundSecondaryLight
+//         : colors.backgroundSecondaryDark};
 const Footer = styled.footer`
-    background-color: ${props =>
-        props.theme.color === 'light'
-            ? colors.backgroundSecondaryLight
-            : colors.backgroundSecondaryDark};
     border-top: 2px solid ${colors.borderLight};
     border-color: ${props =>
         props.theme.color === 'light' ? colors.borderLight : colors.borderDark};
@@ -44,7 +44,10 @@ const SocialMediaListItem = styled.li`
     }
 `;
 
-const SocialMediaLink = styled(Link)``;
+const SocialMediaLink = styled(Link)`
+    ${textColor.title}
+    text-decoration: none;
+`;
 
 type FooterProps = {};
 
@@ -55,23 +58,18 @@ const FooterComponent = ({}: FooterProps) => {
             <ModifiedPageWrapper>
                 <SocialMediaList>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="https://github.com/robertcoopercode">
+                        <SocialMediaLink to="https://github.com/chuntonggao">
                             Github
                         </SocialMediaLink>
                     </SocialMediaListItem>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="https://twitter.com/RobertCooper_RC">
-                            Twitter
+                        <SocialMediaLink to="www.linkedin.com/in/chuntonggao">
+                            LinkedIn
                         </SocialMediaLink>
                     </SocialMediaListItem>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="mailto:robert@robertcooper.me">
+                        <SocialMediaLink to="mailto:heihegao@gmail.com">
                             Email
-                        </SocialMediaLink>
-                    </SocialMediaListItem>
-                    <SocialMediaListItem>
-                        <SocialMediaLink to="https://www.robertcooper.me/rss.xml">
-                            RSS
                         </SocialMediaLink>
                     </SocialMediaListItem>
                 </SocialMediaList>

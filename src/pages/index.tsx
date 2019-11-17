@@ -103,7 +103,7 @@ const Headshot = styled(Img)`
 const Intro = styled.div`
     align-self: center;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 80px;
     z-index: 1;
 
     ${media.medium`
@@ -141,7 +141,8 @@ const SocialMedia = styled.ul`
 `;
 
 const SocialMediaItem = styled.li`
-    margin: 0 10px;
+    margin: 0 2rem;
+    transform: scale(1.5);
 
     &:before {
         content: '';
@@ -293,9 +294,9 @@ export const Home = ({
                     </HeadshotWrapper>
                     <Intro>
                         <IntroDescription>
-                            I am <strong>Chuntong Gao</strong>, a full-stack web
-                            developer that builds web apps and writes articles on web
-                            development ✌🏻
+                            I am <strong>Chuntong Gao</strong> <br />a{' '}
+                            <strong>full-stack engineer</strong> <br />
+                            that builds <strong>web apps</strong>
                         </IntroDescription>
                         <SocialMediaGroup />
                     </Intro>
@@ -355,9 +356,6 @@ export const Home = ({
                         <Button to="/projects">See all projects</Button>
                     </Fade>
                 </Section>
-                <Fade>
-                    <Divider />
-                </Fade>
             </StyledPageWrapper>
         </Layout>
     );

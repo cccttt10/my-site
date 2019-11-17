@@ -3,7 +3,7 @@ import { Location, WindowLocation } from '@reach/router';
 import React from 'react';
 
 import styled from '../lib/styled-components';
-import { colors, media, textColor, textSize } from '../styles/common';
+import { media, textColor, textSize } from '../styles/common';
 import { useTheme } from '../utils/context';
 // eslint-disable-next-line no-unused-vars
 import { ConstrainedPageWidth, PageWrapper } from './Common';
@@ -12,19 +12,20 @@ import ThemeSwitch from './ThemeSwitch';
 
 export const menuHeight = 60;
 
+// background-color: ${props =>
+//     props.theme.color === 'light'
+//         ? colors.backgroundSecondaryLight
+//         : colors.backgroundSecondaryDark};
+
+// border-bottom: 2px solid ${colors.borderLight};
+// border-color: ${props =>
+//     props.theme.color === 'light' ? colors.borderLight : colors.borderDark};
+
 const Menu = styled.div`
     position: relative;
     z-index: 1;
     height: ${menuHeight}px;
     padding: 0 20px;
-    background-color: ${props =>
-        props.theme.color === 'light'
-            ? colors.backgroundSecondaryLight
-            : colors.backgroundSecondaryDark};
-
-    border-bottom: 2px solid ${colors.borderLight};
-    border-color: ${props =>
-        props.theme.color === 'light' ? colors.borderLight : colors.borderDark};
 
     ${media.small`
         height: 180px;
@@ -86,6 +87,7 @@ const NavListItem = styled.li`
 `;
 
 const NavLink = styled(Link)`
+    ${textColor.title};
     text-decoration: none;
 `;
 
@@ -129,7 +131,9 @@ const MenuComponent = () => {
                 {({ location }) => (
                     <ModifiedPageWrapper>
                         <MenuTitleComponent location={location}>
-                            <NavLink to="/">Chuntong Gao</NavLink>
+                            <NavLink to="/">
+                                <span style={{ fontWeight: 800 }}>Chuntong</span> Gao
+                            </NavLink>
                         </MenuTitleComponent>
                         <Nav>
                             <NavList>
