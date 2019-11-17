@@ -5,11 +5,11 @@ import { textColor } from '../../styles/common';
 export default styled.h2`
     ${textColor.title};
     display: block;
-    text-align: left;
-    font-size: 2.8rem;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    font-weight: 800;
 
     * {
         font-size: 2.8rem !important;

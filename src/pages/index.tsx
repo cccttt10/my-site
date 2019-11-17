@@ -194,7 +194,7 @@ const Project = styled.div`
 const ProjectTitle = styled.h3`
     ${textColor.title};
     ${textSize.large};
-    font-family: 'Inter';
+    font-family: 'Poppins';
     margin: 0 0 10px 0;
 `;
 

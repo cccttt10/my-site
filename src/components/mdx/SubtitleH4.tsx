@@ -9,7 +9,7 @@ export default styled.h4`
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-weight: 400;
 
     * {

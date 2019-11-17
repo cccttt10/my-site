@@ -33,7 +33,8 @@ module.exports = {
                             backgroundColor: `none`,
                             maxWidth: 800,
                             quality: 100,
-                            withWebp: true
+                            withWebp: true,
+                            disableBgImage: true
                         },
                         resolve: `gatsby-remark-images`
                     },

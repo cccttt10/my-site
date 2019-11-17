@@ -100,7 +100,7 @@ export const textSize = {
     normal: css`
         font-size: 1.8rem;
         line-height: 1.8;
-        font-weight: 300;
+        font-weight: 200;
 
         ${media.small`
             font-size: 1.6rem;
@@ -126,7 +126,7 @@ export const textSize = {
     `,
     xlarge: css`
         font-size: 6rem;
-        font-weight: 600;
+        font-weight: 800;
         line-height: 1.4;
 
         ${media.small`
