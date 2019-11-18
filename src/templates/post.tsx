@@ -282,7 +282,7 @@ const Post = (props: PostProps) => {
         <Layout frontmatter={mdx.frontmatter} isPost>
             <Helmet>
                 <meta property="og:type" content="article" />
-                <meta property="article:author" content="Robert Cooper" />
+                <meta property="article:author" content="Chuntong Gao" />
                 <meta
                     property="article:published_time"
                     content={mdx.frontmatter.publicationDate}

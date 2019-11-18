@@ -92,7 +92,7 @@ export const Projects = ({
     }
 }: ProjectsProps) => {
     return (
-        <Layout title="Robert Cooper | Projects">
+        <Layout title="Chuntong Gao | Projects">
             {projects.map(({ node: project }, index) => (
                 <Project
                     key={project.fields.id}
