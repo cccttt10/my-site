@@ -1,6 +1,7 @@
 ---
 slug: '/elegant-developer-experience-with-zsh-and-iterm2'
 date: '2019-11-17'
+updatedAt: '2019-11-17'
 title: 'Elegant Developer Experience with Zsh and iTerm2'
 # Description should be no more than 160 characters in length
 description: 'How I configure and style my terminal to optimize my development workflow'
