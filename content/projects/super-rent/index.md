@@ -3,11 +3,12 @@ date: '2019-10-20'
 title: 'Super Rent'
 subtitle: 'React.js + Node.js + MySQL'
 description: 'End-to-end admin system for a car rental company'
-image: './images/main.png'
+image: './images/main-color.png'
+imageTransparent: './images/main-transparent.png'
 backgroundColor: '#0BB87E'
 textColor: 'dark'
 detailsPageLink: '/project/super-rent'
-banner: './images/meat-journal-social-sharing.png'
+banner: './images/main-color.png'
 ---
 
 import Link from "\$components/Link";
