@@ -13,6 +13,7 @@ export type Project = {
             subtitle: string;
             description: string;
             image: FixedImage & FluidImage;
+            imageColor: FixedImage & FluidImage;
             textColor: ThemeEnum;
             backgroundColor: string;
             detailsPageLink?: string;

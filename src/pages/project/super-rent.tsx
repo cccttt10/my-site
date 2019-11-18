@@ -140,7 +140,7 @@ export const Project = ({
                             {project.description}
                         </Description>
                     </LeftSection>
-                    <Image fluid={mainTransparent.childImageSharp.fluid} />
+                    <Image fluid={project.image.childImageSharp.fluid} />
                 </StyledPageWrapper>
             </Header>
             <SectionBody>
@@ -174,16 +174,6 @@ export const pageQuery = graphql`
                 }
                 banner {
                     publicURL
-                }
-            }
-        }
-        mainTransparent: file(
-            name: { eq: "main-transparent" }
-            relativePath: { regex: "/super-rent/images/" }
-        ) {
-            childImageSharp {
-                fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
                 }
             }
         }

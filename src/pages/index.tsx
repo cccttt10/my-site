@@ -337,7 +337,7 @@ export const Home = ({
                                         <Project>
                                             <ProjectImage
                                                 fluid={
-                                                    project.frontmatter.image
+                                                    project.frontmatter.imageColor
                                                         .childImageSharp.fluid
                                                 }
                                             />
@@ -423,7 +423,7 @@ export const pageQuery = graphql`
                         subtitle
                         description
                         detailsPageLink
-                        image {
+                        imageColor {
                             childImageSharp {
                                 fluid(maxWidth: 240) {
                                     ...GatsbyImageSharpFluid
