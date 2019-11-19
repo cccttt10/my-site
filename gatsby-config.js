@@ -1,6 +1,13 @@
 /* eslint-disable camelcase */
 
 module.exports = {
+    siteMetadata: {
+        author: `Chuntong Gao`,
+        description: `I am Chuntong Gao, a full stack engineer that builds modern web apps.`,
+        imagePath: `/social-sharing.jpg`,
+        siteUrl: `https://cgao.info`,
+        title: `Chuntong Gao`
+    },
     pathPrefix: `/`,
     plugins: [
         {
@@ -63,25 +70,18 @@ module.exports = {
                 background_color: `#F9FCFF`,
                 display: `standalone`,
                 icon: `assets/logo.png`,
-                name: `Full-stack web developer`,
-                short_name: `Chuntong`,
+                name: `Chuntong Gao - Full Stack Web Developer`,
+                short_name: `Chuntong Gao`,
                 start_url: `/`,
                 theme_color: `#09203A`
             },
             resolve: `gatsby-plugin-manifest`
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: `UA-139071088-2`
+            }
         }
-        // {
-        //     options: {
-        //         trackingId: `UA-80196253-8`
-        //     },
-        //     resolve: `gatsby-plugin-google-analytics`
-        // }
-    ],
-    siteMetadata: {
-        author: `Chuntong Gao`,
-        description: `The web development blog and project portfolio of Chuntong Gao, a student web developer based in Vancouver 🇨🇦.`,
-        imagePath: `/social-sharing.jpg`,
-        siteUrl: `https://www.robertcooper.me`,
-        title: `Chuntong Gao`
-    }
+    ]
 };
