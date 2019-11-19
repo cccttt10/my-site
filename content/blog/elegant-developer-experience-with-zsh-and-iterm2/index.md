@@ -113,7 +113,7 @@ Install iTerm 2 <Link to="https://iterm2.com/">here</Link>.
 
 ### Style iTerm2 - powerlevel9k
 
-In order to have the same icons, font and theme as me, you need to install <Link to="https://github.com/Powerlevel9k/powerlevel9k#installation">powerlevel9k</Link>. You can install by cloning the package into the user's home directory:
+In order to have the same icons, font and prompt as me, you need to install <Link to="https://github.com/Powerlevel9k/powerlevel9k#installation">powerlevel9k</Link>. You can install by cloning the package into the user's home directory:
 
 ```bash
 git clone https://github.com/Powerlevel9k/powerlevel9k.git ~/
@@ -134,3 +134,9 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 Then, open your iTerm2 preferences, go to `Profiles -> Text` and then change the font settings. It is important to change the font to `Hack Nerd Font`. Otherwise, the icons will not display properly.
 
 ![font](./images/font.png)
+
+### Style iTerm2 - color theme
+
+There are <Link to="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes">tons of color themes</Link> that you can download.
+
+Alternatively, if you want to use the same theme as me, you can download my theme configuration file `zshColorTheme.json` from <Link to="https://gist.github.com/chuntonggao/a490f072209aacbd96b0b07bfffe1759">my GitHub</Link>. Then, click `Other Actions...` and then `Import JSON Profiles...` in the window shown above, in order to import the configuration file.
