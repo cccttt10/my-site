@@ -104,7 +104,12 @@ const ModifiedThemeSwitch: any = styled(ThemeSwitch)`
 // tslint:disable-next-line prettier
 const NAVIGATION = [
     { to: '/blog/', label: 'blog' },
-    { to: '/projects/', label: 'projects' }
+    { to: '/projects/', label: 'projects' },
+    {
+        to:
+            'https://drive.google.com/file/d/1t5bwhtnkAxyqCvFQDzRDO2jIMy9RLuzU/view?usp=sharing',
+        label: 'resume'
+    }
 ];
 
 const MenuTitleComponent = ({
