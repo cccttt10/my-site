@@ -7,6 +7,7 @@ import BlogList from '../components/BlogList';
 import { Button, Divider, PageWrapper } from '../components/Common';
 import Github from '../components/icons/Github';
 import Linkedin from '../components/icons/Linkedin';
+import Wechat from '../components/icons/Wechat';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import { Title } from '../components/Typography';
@@ -231,6 +232,11 @@ const SocialMediaGroup = (): JSX.Element => {
         {
             link: 'https://www.linkedin.com/in/chuntonggao',
             icon: <Linkedin iconFill={iconFill} />
+        },
+        {
+            link:
+                'https://drive.google.com/file/d/16JhITjBUgHEY6vtKfAJmKtzTscITQBtn/view?usp=sharing',
+            icon: <Wechat iconFill={iconFill} />
         }
     ];
 
