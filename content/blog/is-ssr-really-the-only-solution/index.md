@@ -4,7 +4,7 @@ date: '2019-12-02'
 updatedAt: '2019-12-02'
 title: 'Is SSR Really the Only Solution?'
 # Description should be no more than 160 characters in length
-description: 'My thoughts on server side rendering in 2019: SSR's advantages, disadvantages and alternatives'
+description: 'My thoughts on server side rendering in 2019'
 categories: ['web', 'ssr', 'architecture']
 banner: './images/banner.png'
 ---
