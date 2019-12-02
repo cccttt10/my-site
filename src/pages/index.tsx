@@ -319,9 +319,7 @@ export const Home = ({
                     <Fade top>
                         <StyledTitle as="h2">Recent Posts</StyledTitle>
                     </Fade>
-                </RecentPosts>
-                <BlogList posts={posts} />
-                <RecentPosts>
+                    <BlogList posts={posts} />
                     <Fade bottom>
                         <Button to="/blog">See all posts</Button>
                     </Fade>
