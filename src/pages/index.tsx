@@ -7,7 +7,7 @@ import BlogList from '../components/BlogList';
 import { Button, Divider, PageWrapper } from '../components/Common';
 import Github from '../components/icons/Github';
 import Linkedin from '../components/icons/Linkedin';
-import Wechat from '../components/icons/Wechat';
+// import Wechat from '../components/icons/Wechat';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
 import { Title } from '../components/Typography';
@@ -232,12 +232,12 @@ const SocialMediaGroup = (): JSX.Element => {
         {
             link: 'https://www.linkedin.com/in/chuntonggao',
             icon: <Linkedin iconFill={iconFill} />
-        },
-        {
-            link:
-                'https://drive.google.com/file/d/1z4rsOkDIcYN-tlRhIo-7ye0-2ACRuPYA/view?usp=sharing',
-            icon: <Wechat iconFill={iconFill} />
         }
+        // {
+        //     link:
+        //         'https://drive.google.com/file/d/1z4rsOkDIcYN-tlRhIo-7ye0-2ACRuPYA/view?usp=sharing',
+        //     icon: <Wechat iconFill={iconFill} />
+        // }
     ];
 
     return (
