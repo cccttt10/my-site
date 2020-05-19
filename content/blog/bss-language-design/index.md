@@ -18,11 +18,9 @@ import Quote from "$components/mdx/Quote";
 
 ## Motivation
 
-BSS is a stylesheet language that is compiled to CSS by our compiler. It is a superset of CSS. It allows front-end developers to write CSS with **nested style rules, variables, functions, control flow, mathematical operations and inheritance**, features that are take for granted in programming languages but are unfortunately not available in CSS. These features have rich expressive power while allowing front-end developers to write more modular and maintainable CSS code.
+BSS is a stylesheet language that is compiled to CSS by our compiler. It is a superset of CSS. It allows front-end developers to write CSS with **nested style rules, variables, functions, control flow, mathematical operations and inheritance**, features that we take for granted in programming languages but are unfortunately not available in CSS. These features have rich expressive power while allowing front-end developers to write more modular and maintainable CSS code.
 
 Note that the compiler we implement will not attempt to parse CSS (this would be overly ambitious and not necessary). It will only parse BSS language features and compile them into CSS. 
-
----
 
 ## Syntax and Examples
 
@@ -50,9 +48,7 @@ div {
 }
 ```
 
----
-
-## Variables
+### Variables
 
 ```css
 /* CSS */
@@ -73,9 +69,7 @@ html {
 }
 ```
 
----
-
-## Functions
+### Functions
 
 ```css
 /* CSS */
@@ -109,9 +103,7 @@ html {
 .container { @call transform(rotate()); }
 ```
 
----
-
-## Control Flow
+### Control Flow
 
 The `@if` syntax is used as `@if <boolean expression> { ... }`. It controls whether or not the block gets evaluated and emits any CSS styles. A`@if` block can be optionally followed by a `@else` block, and the latter is evaluabled if the `@if` boolean expression evaluates to true.
 
@@ -152,9 +144,8 @@ $dark-text: #d2e1dd;
 }
 ```
 
----
 
-## Mathematical Operations
+### Mathematical Operations
 
 ```css
 .box] {
@@ -170,9 +161,7 @@ $dark-text: #d2e1dd;
 }
 ```
 
----
-
-## Inheritance
+### Inheritance
 
 By using `@extend`, you can share a set of CSS properties between one selector and another, which helps keep you stylesheet DRY (Don't Repeat Yourself). In the following example, we will create a series of messaging styles for errors, warnings and successes that all share a set of styles. The shared class emits styles only when it is extended, keeping your compiled CSS code neat and clean.
 
