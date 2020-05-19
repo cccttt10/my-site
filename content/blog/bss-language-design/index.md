@@ -18,7 +18,7 @@ import Quote from "$components/mdx/Quote";
 
 ## Motivation
 
-BSS is a stylesheet language that is compiled to CSS by our compiler. It is a superset of CSS. It allows front-end developers to use nested style rules, variables, functions, control flow, mathematical operations, string operations, logical operations and inheritance, features that are take for granted in programming languages but are unfortunately not available in CSS. These features have rich expressive power while allowing front-end developers to write more modular and maintainable CSS code.
+BSS is a stylesheet language that is compiled to CSS by our compiler. It is a superset of CSS. It allows front-end developers to write CSS with **nested style rules, variables, functions, control flow, mathematical operations and inheritance**, features that are take for granted in programming languages but are unfortunately not available in CSS. These features have rich expressive power while allowing front-end developers to write more modular and maintainable CSS code.
 
 Note that the compiler we implement will not attempt to parse CSS (this would be overly ambitious and not necessary). It will only parse BSS language features and compile them into CSS. 
 
@@ -156,14 +156,78 @@ $dark-text: #d2e1dd;
 
 ## Mathematical Operations
 
----
+```css
+.box] {
+  float: left;
+  width: 31.25%;
+}
+```
 
-## String Operations
-
----
-
-## Logical Operations
+```scss
+.box {
+  float: left;
+  width: 300px / 960px * 100%;
+}
+```
 
 ---
 
 ## Inheritance
+
+By using `@extend`, you can share a set of CSS properties between one selector and another, which helps keep you stylesheet DRY (Don't Repeat Yourself). In the following example, we will create a series of messaging styles for errors, warnings and successes that all share a set of styles. The shared class emits styles only when it is extended, keeping your compiled CSS code neat and clean.
+
+```css
+/* CSS */
+.message, .success, .error, .warning {
+  border: 2px solid #bbb;
+  padding: 20px;
+  color: #444;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
+
+.warning {
+  background-color: yellow;
+}
+```
+
+```scss
+/* BSS */
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 2px solid #bbb;
+  padding: 20px;
+  color: #444;
+}
+
+/* This CSS won't print because %equal-heights is never extended. */
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  background-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  background-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  background-color: yellow;
+}
+```
