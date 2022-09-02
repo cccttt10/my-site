@@ -57,12 +57,12 @@ const FooterComponent = ({}: FooterProps) => {
             <ModifiedPageWrapper>
                 <SocialMediaList>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="https://github.com/chuntonggao">
+                        <SocialMediaLink to="https://github.com/cccttt10">
                             Github
                         </SocialMediaLink>
                     </SocialMediaListItem>
                     <SocialMediaListItem>
-                        <SocialMediaLink to="https://www.linkedin.com/in/chuntonggao">
+                        <SocialMediaLink to="https://www.linkedin.com/in/cccttt10">
                             LinkedIn
                         </SocialMediaLink>
                     </SocialMediaListItem>

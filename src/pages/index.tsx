@@ -226,11 +226,11 @@ const SocialMediaGroup = (): JSX.Element => {
         theme === 'light' ? colors.textTitleLight : colors.textTitleDark;
     const items = [
         {
-            link: 'https://github.com/chuntonggao',
+            link: 'https://github.com/cccttt10',
             icon: <Github iconFill={iconFill} />
         },
         {
-            link: 'https://www.linkedin.com/in/chuntonggao',
+            link: 'https://www.linkedin.com/in/cccttt10',
             icon: <Linkedin iconFill={iconFill} />
         }
         // {
@@ -295,12 +295,12 @@ export const Home = ({
                     <HeadshotWrapper>
                         <Headshot
                             fluid={homeHeadshot.childImageSharp.fluid}
-                            alt="Chuntong Gao's headshot"
+                            alt="CT Gao's headshot"
                         />
                     </HeadshotWrapper>
                     <Intro>
                         <IntroDescription>
-                            I am <strong>Chuntong Gao</strong> <br />a{' '}
+                            I am <strong>CT Gao</strong> <br />a{' '}
                             <strong>full stack engineer</strong> that
                             <br />
                             builds <strong>modern web apps</strong>

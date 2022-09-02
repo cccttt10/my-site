@@ -56,7 +56,7 @@ const Blog = ({ data: { allMdx }, pageContext: { pagination } }: BlogProps) => {
     const posts = page.map(id => allMdx.edges.find(post => post.node.id === id));
 
     return (
-        <Layout title="Chuntong Gao | Blog">
+        <Layout title="CT Gao | Blog">
             <PaddedPageWrapper>
                 <Fade top>
                     <StyledTitle>Blog</StyledTitle>

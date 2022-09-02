@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://cgao.info" rel="noopener" target="_blank"><img width="150" src="./static/social-sharing.jpg" alt="Chuntong Gao logo"></a>
+  <a href="https://cgao.info" rel="noopener" target="_blank"><img width="150" src="./static/social-sharing.jpg" alt="CT Gao logo"></a>
 
 <h1 align="center">My Personal Site</h1>
 

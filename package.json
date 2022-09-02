@@ -1,9 +1,9 @@
 {
   "name": "cgao.info",
   "version": "1.0.0",
-  "description": "Chuntong Gao's personal site",
+  "description": "CT Gao's personal site",
   "main": "index.js",
-  "author": "Chuntong Gao",
+  "author": "CT Gao",
   "license": "MIT",
   "private": false,
   "dependencies": {

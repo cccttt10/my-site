@@ -128,7 +128,7 @@ export const Project = ({
     }
 }: ProjectsProps) => {
     return (
-        <Layout title="Chuntong Gao | Super Rent" frontmatter={project}>
+        <Layout title="CT Gao | Super Rent" frontmatter={project}>
             <Header backgroundColor={project.backgroundColor}>
                 <StyledPageWrapper>
                     <LeftSection>
@@ -145,7 +145,7 @@ export const Project = ({
             </Header>
             <SectionBody>
                 <ViewButtonWrapper>
-                    <ViewButton to="https://chuntonggao.github.io/super-rent-frontend/">
+                    <ViewButton to="https://cccttt10.github.io/super-rent-frontend/">
                         View the app
                     </ViewButton>
                 </ViewButtonWrapper>

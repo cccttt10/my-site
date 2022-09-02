@@ -177,7 +177,7 @@ export const Layout = ({
                         '@type': 'Article',
                         author: {
                             '@type': 'Person',
-                            name: 'Chuntong Gao'
+                            name: 'CT Gao'
                         },
                         datePublished: publicationDate,
                         dateModified: updatedAtDate
@@ -195,7 +195,7 @@ export const Layout = ({
                         mainEntityOfPage: `${siteUrl}${slug}`,
                         publisher: {
                             '@type': 'Organization',
-                            name: 'Chuntong Gao',
+                            name: 'CT Gao',
                             logo: {
                                 '@type': 'ImageObject',
                                 url: `${siteUrl}/logo.png`

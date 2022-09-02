@@ -2,11 +2,11 @@
 
 module.exports = {
     siteMetadata: {
-        author: `Chuntong Gao`,
-        description: `I am Chuntong Gao, a full stack engineer that builds modern web apps.`,
+        author: `CT Gao`,
+        description: `I am CT Gao, a full stack engineer that builds modern web apps.`,
         imagePath: `/social-sharing.jpg`,
         siteUrl: `https://cgao.info`,
-        title: `Chuntong Gao`
+        title: `CT Gao`
     },
     pathPrefix: `/`,
     plugins: [
@@ -70,8 +70,8 @@ module.exports = {
                 background_color: `#F9FCFF`,
                 display: `standalone`,
                 icon: `assets/logo.png`,
-                name: `Chuntong Gao - Full Stack Web Developer`,
-                short_name: `Chuntong Gao`,
+                name: `CT Gao - Full Stack Web Developer`,
+                short_name: `CT Gao`,
                 start_url: `/`,
                 theme_color: `#09203A`
             },

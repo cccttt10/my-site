@@ -38,11 +38,11 @@ Recently I also tried <Link to="https://hyper.is/">Hyper</Link>. Hyper is cross-
 
 ### `.zshrc`
 
-In the tutorial, I will guide you through every installation step and explain every line of `.zshrc` to you. If you want to reference the complete configuration file, it's available as a <Link to="https://gist.github.com/chuntonggao/6ecce4f2f9ed3238f0d7639c69c2644c">GitHub Gist</Link>. Note that some stuff in this file may not be applicable to you, such as MySQL and Google Cloud configurations. I will explain the relevant stuff in this tutorial.
+In the tutorial, I will guide you through every installation step and explain every line of `.zshrc` to you. If you want to reference the complete configuration file, it's available as a <Link to="https://gist.github.com/cccttt10/6ecce4f2f9ed3238f0d7639c69c2644c">GitHub Gist</Link>. Note that some stuff in this file may not be applicable to you, such as MySQL and Google Cloud configurations. I will explain the relevant stuff in this tutorial.
 
 ### `zshColorTheme.json`
 
-This is for color theme configurations and available <Link to="https://gist.github.com/chuntonggao/a490f072209aacbd96b0b07bfffe1759">here</Link>. Again, I will explain the details a bit later.
+This is for color theme configurations and available <Link to="https://gist.github.com/cccttt10/a490f072209aacbd96b0b07bfffe1759">here</Link>. Again, I will explain the details a bit later.
 
 ---
 ## Homebrew
@@ -268,4 +268,4 @@ Then, open your iTerm2 preferences, go to `Profiles -> Text` and then change the
 
 There are <Link to="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes">tons of color themes</Link> that you can download.
 
-Alternatively, if you want to use the same theme as me, you can download my theme configuration file `zshColorTheme.json` from <Link to="https://gist.github.com/chuntonggao/a490f072209aacbd96b0b07bfffe1759">my GitHub</Link>. Then, click `Other Actions...` and then `Import JSON Profiles...` in the window shown above, in order to import the configuration file.
+Alternatively, if you want to use the same theme as me, you can download my theme configuration file `zshColorTheme.json` from <Link to="https://gist.github.com/cccttt10/a490f072209aacbd96b0b07bfffe1759">my GitHub</Link>. Then, click `Other Actions...` and then `Import JSON Profiles...` in the window shown above, in order to import the configuration file.

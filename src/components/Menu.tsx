@@ -104,12 +104,12 @@ const ModifiedThemeSwitch: any = styled(ThemeSwitch)`
 // tslint:disable-next-line prettier
 const NAVIGATION = [
     { to: '/blog/', label: 'blog' },
-    { to: '/projects/', label: 'projects' },
-    {
-        to:
-            'https://drive.google.com/file/d/1HOuhtVYGGQitRL178d_D7oiLwoIcGFMd/view?usp=sharing',
-        label: 'resume'
-    }
+    { to: '/projects/', label: 'projects' }
+    // {
+    //     to:
+    //         'https://drive.google.com/file/d/1HOuhtVYGGQitRL178d_D7oiLwoIcGFMd/view?usp=sharing',
+    //     label: 'resume'
+    // }
 ];
 
 const MenuTitleComponent = ({
@@ -136,7 +136,7 @@ const MenuComponent = () => {
                     <ModifiedPageWrapper>
                         <MenuTitleComponent location={location}>
                             <NavLink to="/">
-                                <span style={{ fontWeight: 800 }}>Chuntong</span> Gao
+                                <span style={{ fontWeight: 800 }}>CT</span> Gao
                             </NavLink>
                         </MenuTitleComponent>
                         <Nav>

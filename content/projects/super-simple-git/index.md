@@ -7,7 +7,7 @@ image: './images/main-transparent.png'
 imageColor: './images/main-color.png'
 backgroundColor: '#F7A500'
 textColor: 'dark'
-detailsPageLink: 'https://chuntonggao.github.io/super-simple-git/'
+detailsPageLink: 'https://cccttt10.github.io/super-simple-git/'
 banner: './images/main-color.png'
 ---
 
